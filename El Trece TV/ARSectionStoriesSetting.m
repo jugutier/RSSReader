@@ -10,6 +10,7 @@
 #import "ARSectionStoriesSetting.h"
 #import "UIColor+ElTrece.h"
 #import "UIFont+ElTrece.h"
+
 @implementation ARSectionStoriesSetting
 +(UIFont *)font{
     return [[[UIFont alloc]init] sectionStoriesFont];
@@ -18,7 +19,7 @@
     return [[[UIColor alloc]init] sectionStoriesColor];
 }
 +(NSString *)title{
-    return @"Lo último";//TODO: i18n
+    return @"Stories";
 }
 +(UIColor *)backgroundcolor{
     return [[[UIColor alloc]init] sectionStoriesBackgroundColor];

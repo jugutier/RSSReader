@@ -22,13 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blueColor];
-     _bar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen]bounds].size.width, 80)];
+    self.view.backgroundColor = [UIColor darkGrayColor];
+    _bar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen]bounds].size.width, 80)];
     [self.view addSubview:_bar];
-
+    
     //Tell the user we are fetching first items off the internet.
     UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    spinner.center = CGPointMake(160, 240);
+    spinner.center = self.view.center;
     spinner.hidesWhenStopped = YES;
     [self.view addSubview:spinner];
     [spinner startAnimating];
@@ -36,9 +36,9 @@
     __weak UIActivityIndicatorView *weakSpinner = spinner;//to avoid retain cycles
     [[ARFeedManager sharedManager]start:^(NSArray * items){
         _dataSource = items;
-//        for (ARFeedItem* item in items) {
-//            NSLog(@"%@",item.title);
-//        }
+        //        for (ARFeedItem* item in items) {
+        //            NSLog(@"%@",item.title);
+        //        }
         [weakSpinner stopAnimating];
         [self preparePageController];
     }];
@@ -62,14 +62,14 @@
         navItem = _bar.topItem;
     }
     switch (index) {
-        case 0://Lo último
+        case 0://Stories
             currentFontColor = [ARSectionStoriesSetting color];
             currentFont = [ARSectionStoriesSetting font];
             currentBackgroundColor = [ARSectionStoriesSetting backgroundcolor];
             navItem.title = [ARSectionStoriesSetting title];
             
             break;
-        case 1://Capítulos
+        case 1://Shows
             currentFontColor = [ARSectionShowsSetting color];
             currentFont = [ARSectionShowsSetting font];
             currentBackgroundColor = [ARSectionShowsSetting backgroundcolor];
@@ -82,7 +82,7 @@
             currentFontColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0];
             currentFont =[UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:30.0];
             currentBackgroundColor = [UIColor brownColor];
-            navItem.title = [NSString stringWithFormat:@"Section %d",index];
+            navItem.title = [NSString stringWithFormat:@"Section %lu",(unsigned long)index];
             //There could also be a default settings class
             break;
     }
@@ -90,12 +90,12 @@
     [UIView animateWithDuration:0.5 animations:^{
         _bar.layer.backgroundColor = currentBackgroundColor.CGColor;
     }];
-//    _bar.translucent = NO;
-//    _bar.opaque = YES;
+    //    _bar.translucent = NO;
+    //    _bar.opaque = YES;
     [_bar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:                                                                       currentFontColor, NSForegroundColorAttributeName,
-        shadow, NSShadowAttributeName,
-        currentFont, NSFontAttributeName,
-        nil]];
+                                   shadow, NSShadowAttributeName,
+                                   currentFont, NSFontAttributeName,
+                                   nil]];
     
 }
 -(void)preparePageController{
@@ -114,11 +114,11 @@
     
     for (UIView * view in self.pageController.view.subviews) {
         if([view isKindOfClass:[UIPageControl class]]){
-//            [self.view bringSubviewToFront:view];
-//            [view removeFromSuperview];
-//            view.frame =CGRectMake(0, 60, [[UIScreen mainScreen]bounds].size.width, 20);
-//            [_bar addSubview:view];
-//TODO: hack and move the pagecontrol into the navBar. Alternatively use our own UIPageControl.
+            //            [self.view bringSubviewToFront:view];
+            //            [view removeFromSuperview];
+            //            view.frame =CGRectMake(0, 60, [[UIScreen mainScreen]bounds].size.width, 20);
+            //            [_bar addSubview:view];
+            //TODO: hack and move the pagecontrol into the navBar. Alternatively use our own UIPageControl.
         }
     }
     

@@ -9,6 +9,7 @@
 #import "ARSectionShowsSetting.h"
 #import "UIColor+ElTrece.h"
 #import "UIFont+ElTrece.h"
+
 @implementation ARSectionShowsSetting
 +(UIFont *)font{
     return [[[UIFont alloc]init] sectionShowsFont];
@@ -17,7 +18,7 @@
     return [[[UIColor alloc]init] sectionShowsColor];
 }
 +(NSString *)title{
-    return @"Capítulos";//TODO: i18n
+    return @"Shows";
 }
 +(UIColor *)backgroundcolor{
     return [[[UIColor alloc]init] sectionShowsBackgroundColor];

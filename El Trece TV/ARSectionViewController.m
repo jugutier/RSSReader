@@ -22,9 +22,11 @@
     if(!_contentView){
         _contentView = [[ARSectionContentView alloc]initWithFrame:self.view.frame];
         [_contentView setTitle:_item.title];
-        [_contentView setLink:_item.link];
-        [_contentView setImage:_item.content];
+        [_contentView setText:[NSString stringWithFormat:@"%@ %@",@"By:", _item.author]];
         [_contentView setText:_item.summary];
+        [_contentView setText:@"Read More:"];
+        [_contentView setLink:_item.link];
+        //[_contentView setImage:_item.content];
         [self.view addSubview:_contentView];
     }
 }

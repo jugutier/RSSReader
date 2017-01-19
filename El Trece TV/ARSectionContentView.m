@@ -13,7 +13,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         _webView = [[UIWebView alloc]initWithFrame:frame];
-        _webView.backgroundColor = [UIColor redColor];
+        _webView.backgroundColor = [UIColor clearColor];
         [self addSubview:_webView];
     }
     return self;

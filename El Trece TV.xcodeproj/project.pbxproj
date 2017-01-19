@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D94D0DDA1C3C9A6B003E695C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0DD91C3C9A6B003E695C /* main.m */; };
+		D94D0DDD1C3C9A6B003E695C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0DDC1C3C9A6B003E695C /* AppDelegate.m */; };
+		D94D0DE01C3C9A6B003E695C /* ARMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0DDF1C3C9A6B003E695C /* ARMainViewController.m */; };
+		D94D0DE51C3C9A6B003E695C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94D0DE41C3C9A6B003E695C /* Images.xcassets */; };
+		D94D0DE81C3C9A6B003E695C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94D0DE61C3C9A6B003E695C /* LaunchScreen.xib */; };
+		D94D0E041C3CA57F003E695C /* ARFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0E031C3CA57F003E695C /* ARFeedManager.m */; };
+		D94D0E081C3CB8B1003E695C /* ARSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0E071C3CB8B1003E695C /* ARSectionViewController.m */; };
+		D94D0E0B1C3CB9B9003E695C /* UIColor+ElTrece.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0E0A1C3CB9B9003E695C /* UIColor+ElTrece.m */; };
+		D94D0E0E1C3CBCC3003E695C /* ARSectionContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0E0D1C3CBCC3003E695C /* ARSectionContentView.m */; };
+		D94D0E111C3CC178003E695C /* ARFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0E101C3CC178003E695C /* ARFeedItem.m */; };
+		D94D0E131C3CC5C3003E695C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94D0E121C3CC5C3003E695C /* WebKit.framework */; };
+		D94D0E181C3D2FC6003E695C /* UIFont+ElTrece.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0E171C3D2FC6003E695C /* UIFont+ElTrece.m */; };
+		D94D0E1B1C3D3099003E695C /* ARSectionStoriesSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0E1A1C3D3099003E695C /* ARSectionStoriesSetting.m */; };
+		D94D0E1E1C3D30B5003E695C /* ARSectionShowsSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = D94D0E1D1C3D30B5003E695C /* ARSectionShowsSetting.m */; };
+		E4A251F631613B3E1ADCA584 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9400573FE14F2341D5220F /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26B45C90C9B7908C5E247A62 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8158C6F12EA62F526BE74491 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BD9400573FE14F2341D5220F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94D0DD41C3C9A6B003E695C /* El Trece TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Trece TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94D0DD81C3C9A6B003E695C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94D0DD91C3C9A6B003E695C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D94D0DDB1C3C9A6B003E695C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D94D0DDC1C3C9A6B003E695C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D94D0DDE1C3C9A6B003E695C /* ARMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMainViewController.h; sourceTree = "<group>"; };
+		D94D0DDF1C3C9A6B003E695C /* ARMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARMainViewController.m; sourceTree = "<group>"; };
+		D94D0DE41C3C9A6B003E695C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D94D0DE71C3C9A6B003E695C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D94D0E021C3CA57F003E695C /* ARFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARFeedManager.h; sourceTree = "<group>"; };
+		D94D0E031C3CA57F003E695C /* ARFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARFeedManager.m; sourceTree = "<group>"; };
+		D94D0E061C3CB8B1003E695C /* ARSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSectionViewController.h; sourceTree = "<group>"; };
+		D94D0E071C3CB8B1003E695C /* ARSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSectionViewController.m; sourceTree = "<group>"; };
+		D94D0E091C3CB9B9003E695C /* UIColor+ElTrece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ElTrece.h"; sourceTree = "<group>"; };
+		D94D0E0A1C3CB9B9003E695C /* UIColor+ElTrece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ElTrece.m"; sourceTree = "<group>"; };
+		D94D0E0C1C3CBCC3003E695C /* ARSectionContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSectionContentView.h; sourceTree = "<group>"; };
+		D94D0E0D1C3CBCC3003E695C /* ARSectionContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSectionContentView.m; sourceTree = "<group>"; };
+		D94D0E0F1C3CC178003E695C /* ARFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARFeedItem.h; sourceTree = "<group>"; };
+		D94D0E101C3CC178003E695C /* ARFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARFeedItem.m; sourceTree = "<group>"; };
+		D94D0E121C3CC5C3003E695C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D94D0E141C3CCAAE003E695C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D94D0E161C3D2FC6003E695C /* UIFont+ElTrece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ElTrece.h"; sourceTree = "<group>"; };
+		D94D0E171C3D2FC6003E695C /* UIFont+ElTrece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ElTrece.m"; sourceTree = "<group>"; };
+		D94D0E191C3D3099003E695C /* ARSectionStoriesSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSectionStoriesSetting.h; sourceTree = "<group>"; };
+		D94D0E1A1C3D3099003E695C /* ARSectionStoriesSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSectionStoriesSetting.m; sourceTree = "<group>"; };
+		D94D0E1C1C3D30B5003E695C /* ARSectionShowsSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSectionShowsSetting.h; sourceTree = "<group>"; };
+		D94D0E1D1C3D30B5003E695C /* ARSectionShowsSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSectionShowsSetting.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D94D0DD11C3C9A6B003E695C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94D0E131C3CC5C3003E695C /* WebKit.framework in Frameworks */,
+				E4A251F631613B3E1ADCA584 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2762701107B3CEC2A47F00B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D94D0E121C3CC5C3003E695C /* WebKit.framework */,
+				BD9400573FE14F2341D5220F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34CDC7C15DF11143398C4281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8158C6F12EA62F526BE74491 /* Pods.debug.xcconfig */,
+				26B45C90C9B7908C5E247A62 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D94D0DCB1C3C9A6B003E695C = {
+			isa = PBXGroup;
+			children = (
+				D94D0DD61C3C9A6B003E695C /* El Trece TV */,
+				D94D0DD51C3C9A6B003E695C /* Products */,
+				34CDC7C15DF11143398C4281 /* Pods */,
+				2762701107B3CEC2A47F00B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D94D0DD51C3C9A6B003E695C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D94D0DD41C3C9A6B003E695C /* El Trece TV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D94D0DD61C3C9A6B003E695C /* El Trece TV */ = {
+			isa = PBXGroup;
+			children = (
+				D94D0E151C3D2F9E003E695C /* Common */,
+				D94D0DFF1C3C9D0C003E695C /* View */,
+				D94D0DFE1C3C9D06003E695C /* Model */,
+				D94D0DFD1C3C9CF6003E695C /* Controller */,
+				D94D0DE41C3C9A6B003E695C /* Images.xcassets */,
+				D94D0DE61C3C9A6B003E695C /* LaunchScreen.xib */,
+				D94D0DD71C3C9A6B003E695C /* Supporting Files */,
+				D94D0E141C3CCAAE003E695C /* README.md */,
+			);
+			path = "El Trece TV";
+			sourceTree = "<group>";
+		};
+		D94D0DD71C3C9A6B003E695C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D94D0DDB1C3C9A6B003E695C /* AppDelegate.h */,
+				D94D0DDC1C3C9A6B003E695C /* AppDelegate.m */,
+				D94D0DD81C3C9A6B003E695C /* Info.plist */,
+				D94D0DD91C3C9A6B003E695C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D94D0DFD1C3C9CF6003E695C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D94D0DDE1C3C9A6B003E695C /* ARMainViewController.h */,
+				D94D0DDF1C3C9A6B003E695C /* ARMainViewController.m */,
+				D94D0E061C3CB8B1003E695C /* ARSectionViewController.h */,
+				D94D0E071C3CB8B1003E695C /* ARSectionViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D94D0DFE1C3C9D06003E695C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D94D0E021C3CA57F003E695C /* ARFeedManager.h */,
+				D94D0E031C3CA57F003E695C /* ARFeedManager.m */,
+				D94D0E0F1C3CC178003E695C /* ARFeedItem.h */,
+				D94D0E101C3CC178003E695C /* ARFeedItem.m */,
+				D94D0E1F1C3D30BB003E695C /* Section Settings */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D94D0DFF1C3C9D0C003E695C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D94D0E0C1C3CBCC3003E695C /* ARSectionContentView.h */,
+				D94D0E0D1C3CBCC3003E695C /* ARSectionContentView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D94D0E151C3D2F9E003E695C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D94D0E091C3CB9B9003E695C /* UIColor+ElTrece.h */,
+				D94D0E0A1C3CB9B9003E695C /* UIColor+ElTrece.m */,
+				D94D0E161C3D2FC6003E695C /* UIFont+ElTrece.h */,
+				D94D0E171C3D2FC6003E695C /* UIFont+ElTrece.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		D94D0E1F1C3D30BB003E695C /* Section Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D94D0E191C3D3099003E695C /* ARSectionStoriesSetting.h */,
+				D94D0E1A1C3D3099003E695C /* ARSectionStoriesSetting.m */,
+				D94D0E1C1C3D30B5003E695C /* ARSectionShowsSetting.h */,
+				D94D0E1D1C3D30B5003E695C /* ARSectionShowsSetting.m */,
+			);
+			name = "Section Settings";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D94D0DD31C3C9A6B003E695C /* El Trece TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D94D0DF71C3C9A6B003E695C /* Build configuration list for PBXNativeTarget "El Trece TV" */;
+			buildPhases = (
+				C8207317AD6B137C729BD832 /* Check Pods Manifest.lock */,
+				D94D0DD01C3C9A6B003E695C /* Sources */,
+				D94D0DD11C3C9A6B003E695C /* Frameworks */,
+				D94D0DD21C3C9A6B003E695C /* Resources */,
+				3C0B7B07C8E109F27A628646 /* Embed Pods Frameworks */,
+				048546E87EEB67FA77BA3628 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "El Trece TV";
+			productName = "El Trece TV";
+			productReference = D94D0DD41C3C9A6B003E695C /* El Trece TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D94D0DCC1C3C9A6B003E695C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Artear;
+				TargetAttributes = {
+					D94D0DD31C3C9A6B003E695C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = D94D0DCF1C3C9A6B003E695C /* Build configuration list for PBXProject "El Trece TV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D94D0DCB1C3C9A6B003E695C;
+			productRefGroup = D94D0DD51C3C9A6B003E695C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D94D0DD31C3C9A6B003E695C /* El Trece TV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D94D0DD21C3C9A6B003E695C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94D0DE81C3C9A6B003E695C /* LaunchScreen.xib in Resources */,
+				D94D0DE51C3C9A6B003E695C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		048546E87EEB67FA77BA3628 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C0B7B07C8E109F27A628646 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8207317AD6B137C729BD832 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D94D0DD01C3C9A6B003E695C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94D0E0B1C3CB9B9003E695C /* UIColor+ElTrece.m in Sources */,
+				D94D0E081C3CB8B1003E695C /* ARSectionViewController.m in Sources */,
+				D94D0E0E1C3CBCC3003E695C /* ARSectionContentView.m in Sources */,
+				D94D0E041C3CA57F003E695C /* ARFeedManager.m in Sources */,
+				D94D0DE01C3C9A6B003E695C /* ARMainViewController.m in Sources */,
+				D94D0E1B1C3D3099003E695C /* ARSectionStoriesSetting.m in Sources */,
+				D94D0E181C3D2FC6003E695C /* UIFont+ElTrece.m in Sources */,
+				D94D0E111C3CC178003E695C /* ARFeedItem.m in Sources */,
+				D94D0E1E1C3D30B5003E695C /* ARSectionShowsSetting.m in Sources */,
+				D94D0DDD1C3C9A6B003E695C /* AppDelegate.m in Sources */,
+				D94D0DDA1C3C9A6B003E695C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D94D0DE61C3C9A6B003E695C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D94D0DE71C3C9A6B003E695C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D94D0DF51C3C9A6B003E695C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D94D0DF61C3C9A6B003E695C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D94D0DF81C3C9A6B003E695C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8158C6F12EA62F526BE74491 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "El Trece TV/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D94D0DF91C3C9A6B003E695C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B45C90C9B7908C5E247A62 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "El Trece TV/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D94D0DCF1C3C9A6B003E695C /* Build configuration list for PBXProject "El Trece TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94D0DF51C3C9A6B003E695C /* Debug */,
+				D94D0DF61C3C9A6B003E695C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D94D0DF71C3C9A6B003E695C /* Build configuration list for PBXNativeTarget "El Trece TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94D0DF81C3C9A6B003E695C /* Debug */,
+				D94D0DF91C3C9A6B003E695C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D94D0DCC1C3C9A6B003E695C /* Project object */;
+}
